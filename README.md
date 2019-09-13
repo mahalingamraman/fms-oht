@@ -37,3 +37,29 @@ export class RouteMapNode {
   activeClass: string;
 }
 ```
+## Sample dataSource 
+```javascript
+export const appRoutes = [
+    { 
+        name: 'Home',
+        children:[],
+        iconText: 'home',
+        fontSet: 'icomoon'
+    },
+    {
+        name: 'Theme',
+        route: '/theme',
+        iconText: 'droplet',
+        fontSet: 'icomoon',
+        children: [
+            {
+                name: 'Icon Overview',
+                pathName: 'icon',
+                component: IconComponent,
+                isDefault: false,
+                path: '/icon',
+                iconText: '',
+                fontSet: ''
+            }]
+    }];
+```
