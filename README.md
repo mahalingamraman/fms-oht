@@ -22,4 +22,18 @@ To render conditionally an item can get the context which contains the following
                   (onNavLinkClicked)="onNavLinkClicked($event)"
                   (onNavLinkExpanded)="onNavLinkExpanded($event)"></cc-side-nav>
 ```
-    - your  should wrapped with "sidenav" class.
+## Below is an dataSource structure.
+```javascript
+export class RouteMapNode {
+  children?: RouteMapNode[];
+  name: string;
+  type?: string | null;
+  pathName: string;
+  component: string;
+  isDefault: boolean;
+  path: string;
+  iconText: string;
+  fontSet: string;
+  activeClass: string;
+}
+```
